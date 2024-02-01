@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Autograph";
+    src: url("./assets/fonts/AutographSansBeta-Regular.otf") format("otf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body height to full viewport height */
+    animation: rotateColors 60s infinite;
+}
+
+@keyframes rotateColors {
+    0% {
+        background-color: #f2f243;
+    }
+    33% {
+        background-color: #cb428b;
+    }
+    67% {
+        background-color: #20a949;
+    }
+    100% {
+        background-color: #f2f243;
+    }
+}
+
+#countdown {
+    font-family: "Autograph";
+    font-size: 24px;
+    text-align: center;
+    font-feature-settings: "tnum";
+}
