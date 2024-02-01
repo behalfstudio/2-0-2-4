@@ -1,10 +1,11 @@
 @font-face {
     font-family: "Autograph";
+    src: url("./assets/fonts/AutographSansBeta-Regular.woff") format("woff");
+    src: url("./assets/fonts/AutographSansBeta-Regular.woff2") format("woff2");
     src: url("./assets/fonts/AutographSansBeta-Regular.otf") format("otf");
 }
 
-html,
-body {
+html {
     margin: 0;
     padding: 0;
 }
@@ -13,7 +14,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the body height to full viewport height */
+    height: 100vh;
+    margin: 0;
+    padding: 20;
     animation: rotateColors 60s infinite;
 }
 
