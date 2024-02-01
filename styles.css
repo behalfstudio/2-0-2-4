@@ -18,6 +18,11 @@ body {
     justify-content: center;
     align-items: center;
     animation: rotateColors 60s infinite;
+
+    background-image: url("./assets/img/dragon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @keyframes rotateColors {
@@ -40,4 +45,9 @@ body {
     font-size: 24px;
     text-align: center;
     font-feature-settings: "tnum";
+
+    background: white;
+
+    width: 100%;
+    padding: 20px;
 }
