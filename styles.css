@@ -5,18 +5,18 @@
     src: url("./assets/fonts/AutographSansBeta-Regular.otf") format("otf");
 }
 
-html {
+html,
+body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 20;
     animation: rotateColors 60s infinite;
 }
 
