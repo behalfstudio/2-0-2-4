@@ -1,4 +1,4 @@
-const futureTime = new Date("2024-02-05T00:00:00+07:00").getTime();
+const futureTime = new Date("2024-02-07T00:00:00+07:00").getTime();
 
 const countdownInterval = setInterval(() => {
     let currentTime = new Date().getTime();
