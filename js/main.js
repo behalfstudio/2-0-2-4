@@ -1,3 +1,21 @@
+const BLESSINGS = [
+    "May fortune be with you all year long!",
+    "Wishing you a year of endless long-evity!",
+    "May this year bring you long-lasting joy!",
+    "To a year that enriches your be-long-ings!",
+    "Find yourself amidst life-long friends!",
+    "May you always feel you be-long!",
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("blessing").textContent =
+        BLESSINGS[Math.floor(Math.random() * BLESSINGS.length)];
+});
+
+//------------------------------------------------------------------//
+//------------------------------------------------------------------//
+//------------------------------------------------------------------//
+
 let canvas;
 
 const THEMES = 3;
