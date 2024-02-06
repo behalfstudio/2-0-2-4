@@ -1,53 +1,76 @@
 @font-face {
-    font-family: "Autograph";
-    src: url("./assets/fonts/AutographSansBeta-Regular.woff") format("woff");
-    src: url("./assets/fonts/AutographSansBeta-Regular.woff2") format("woff2");
-    src: url("./assets/fonts/AutographSansBeta-Regular.otf") format("otf");
+    font-family: "GT America LV";
+    font-weight: normal;
+    src: url("./assets/fonts/GT-America-LV-Standard-Regular.woff")
+        format("woff");
+    src: url("./assets/fonts/GT-America-LV-Standard-Regular.woff2")
+        format("woff2");
 }
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
 
 html,
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-body {
+/*---------------------------------------------------------------------------------*/
+
+#overlay-wrapper {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    /* padding: 40px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: "GT America LV";
+    font-size: 16px;
+}
+
+.overlay {
+    background-color: white;
+
+    margin: 20px;
+    padding: 12px 16px;
+    gap: 4px;
+
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    animation: rotateColors 60s infinite;
-
-    background-image: url("./assets/img/dragon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-@keyframes rotateColors {
-    0% {
-        background-color: #f2f243;
-    }
-    33% {
-        background-color: #cb428b;
-    }
-    67% {
-        background-color: #20a949;
-    }
-    100% {
-        background-color: #f2f243;
-    }
+p,
+a {
+    margin: 0px;
 }
 
-#countdown {
-    font-family: "Autograph";
-    font-size: 24px;
-    text-align: center;
-    font-feature-settings: "tnum";
+a {
+    text-decoration: none;
+    color: inherit;
 
-    background: white;
+    padding-bottom: 4px;
 
-    width: 100%;
-    padding: 20px;
+    border-bottom: 1px solid black;
+    transition: 0.3s padding-bottom;
+}
+
+a:hover {
+    padding-bottom: 0.5px;
+
+    transition: 0.3s padding-bottom;
 }
